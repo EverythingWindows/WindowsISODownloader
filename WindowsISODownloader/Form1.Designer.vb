@@ -94,6 +94,7 @@ Partial Class Form1
         '
         'ComboBox2
         '
+        Me.ComboBox2.Enabled = False
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"Windows 1.x", "Windows 2.x", "Windows 3.x", "Windows 95", "Windows 98", "Windows ME", "Windows XP", "Windows Vista", "Windows 7", "Windows 8", "Windows 8.1", "Windows 10", "Windows 11"})
         Me.ComboBox2.Location = New System.Drawing.Point(75, 209)
@@ -139,6 +140,7 @@ Partial Class Form1
         '
         'ComboBox3
         '
+        Me.ComboBox3.Enabled = False
         Me.ComboBox3.FormattingEnabled = True
         Me.ComboBox3.Items.AddRange(New Object() {"Windows 1.x", "Windows 2.x", "Windows 3.x", "Windows 95", "Windows 98", "Windows ME", "Windows XP", "Windows Vista", "Windows 7", "Windows 8", "Windows 8.1", "Windows 10", "Windows 11"})
         Me.ComboBox3.Location = New System.Drawing.Point(75, 270)
@@ -157,6 +159,7 @@ Partial Class Form1
         '
         'ComboBox4
         '
+        Me.ComboBox4.Enabled = False
         Me.ComboBox4.FormattingEnabled = True
         Me.ComboBox4.Items.AddRange(New Object() {"Windows 1.x", "Windows 2.x", "Windows 3.x", "Windows 95", "Windows 98", "Windows ME", "Windows XP", "Windows Vista", "Windows 7", "Windows 8", "Windows 8.1", "Windows 10", "Windows 11"})
         Me.ComboBox4.Location = New System.Drawing.Point(75, 334)
@@ -262,7 +265,10 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.MaximizeBox = False
         Me.Name = "Form1"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Windows ISO Downloader"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
